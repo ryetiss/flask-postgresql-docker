@@ -1,17 +1,37 @@
 # flask-postgresql-docker
-This repo is a simple Newsletter project.
+This repo is a simple Newsletter project. This process is for WINDOWS10.
 
-#### First, download python and docker-desktop
+#### First, download and install python and docker-desktop
 
-#### Second, pip install -r requirements.txt
+`<link>` : <https://www.python.org/downloads/windows/>
+
+`<link>` : <https://docs.docker.com/desktop/install/windows-install/>
+
+#### Second, install requirements
+
+`pip install -r requirements.txt`
 
 #### Third, set environment variables
 
-#### Lastly, "docker-compose up" <- For dockerize postgresql, "flask run" <- For start flask app.
+    SET FLASK_APP=project
+    SET FLASK_DEBUG=True
+    SET POSTGRES_USER=nladmin
+    SET POSTGRES_PASSWORD=admin123
+    SET POSTGRES_HOST=localhost
+    SET POSTGRES_PORT=5432
+    SET POSTGRES_DB=newsletter
 
-Thats all!
+#### Lastly, dockerize postgresql and start Flask App.
 
-** PS: For login page credentials are "admin:admin123".
+    C:\%PATH%\NewsLetter> docker compose up
+  
+    C:\%PATH%\NewsLetter> python -m flask run
+
+#### Thats all!
+
+> For login page credentials are "admin:admin123".
+
+> You can just run " **app_run.bat** "
 
 ### Resources:
 
