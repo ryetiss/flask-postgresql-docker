@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="column is-8 is-offset-2">
+<h3 class="title">{% block title %} {{letter.header}} {% endblock %}</h3>
+	<div class="box has-text-left">
+			<div class="field is-horizontal">
+			  <div class="content is-medium">
+				<p>{{letter.body}}</p>
+			  </div>
+			</div>
+			<div class="field is-horizontal">
+			  <div class="field-label is-small">
+				<label class="label">Topic</label>
+			  </div>
+			  <div class="field-body">
+				<div class="field">
+				  <div class="control is-small">
+					<p>{{letter.topic}}</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="field is-horizontal">
+			  <div class="field-label is-small">
+				<label class="label">Author</label>
+			  </div>
+			  <div class="field-body">
+				<div class="field">
+				  <div class="control is-small">
+					<p>{{letter.author}}</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}

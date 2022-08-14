@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="column is-8 is-offset-2">
+<h3 class="title">{% block title %} Add News {% endblock %}</h3>
+	<div class="box">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="notification is-danger">
+                {{ messages[0] }}. Go to <a href="{{ url_for('auth.login') }}">login page</a>.
+            </div>
+        {% endif %}
+        {% endwith %}
+        <form method="POST" action="/addnews">
+			<div class="field is-horizontal">
+			  <div class="field-label is-normal">
+				<label class="label">Header</label>
+			  </div>
+			  <div class="field-body">
+				<div class="field">
+				  <div class="control">
+					<input class="input is-success" type="text" name="header" placeholder="News Header">
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="field is-horizontal">
+			  <div class="field-label is-normal">
+				<label class="label">Body</label>
+			  </div>
+			  <div class="field-body">
+				<div class="field">
+				  <div class="control">
+					<textarea class="textarea is-success" name="body" placeholder="News Body" rows="6"></textarea>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="field is-horizontal">
+			  <div class="field-label is-normal">
+				<label class="label">Topic</label>
+			  </div>
+			  <div class="field-body">
+				<div class="field">
+				  <div class="control">
+					<input class="input is-success" type="text" name="topic" placeholder="News Topic">
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="field is-horizontal">
+			  <div class="field-label is-normal">
+				<label class="label">Author</label>
+			  </div>
+			  <div class="field-body">
+				<div class="field">
+				  <div class="control">
+					<input class="input is-success" type="text" name="author" placeholder="News Author">
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="field is-horizontal">
+			  <div class="field-label">
+				<!-- Left empty for spacing -->
+			  </div>
+			  <div class="field-body">
+				<div class="field">
+				  <div class="control">
+					<button class="button is-primary">
+					  Submit News
+					</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}

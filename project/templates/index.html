@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="column is-8 is-offset-2">
+<h3 class="title">{% block title %} News List {% endblock %}</h3>
+	<div class="box">
+        <table class="table table-bordered">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col">Id</th>
+                    <th scope="col">Header</th>
+                    <th scope="col">Topic</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for letter in newsletters %}
+                    <tr class="text-center">
+                        <th scope="row">{{letter.id}}</th>
+                        <td><a class="button is-text" href="/detail/{{letter.id}}">{{letter.header}}</a></td>
+                        <td>{{letter.topic}}</td>					
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+	</div>
+</div>
+{% endblock %}
