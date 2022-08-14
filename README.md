@@ -1,17 +1,17 @@
 # flask-postgresql-docker
 This repo is a simple Newsletter project. This process is for WINDOWS10.
 
-#### First, download and install python and docker-desktop
+### First, download and install python and docker-desktop
 
 `<link>` : <https://www.python.org/downloads/windows/>
 
 `<link>` : <https://docs.docker.com/desktop/install/windows-install/>
 
-#### Second, install requirements
+### Second, install requirements
 
 `pip install -r requirements.txt`
 
-#### Third, set environment variables
+### Third, set environment variables
 
     SET FLASK_APP=project
     SET FLASK_DEBUG=True
@@ -21,19 +21,25 @@ This repo is a simple Newsletter project. This process is for WINDOWS10.
     SET POSTGRES_PORT=5432
     SET POSTGRES_DB=newsletter
 
-#### Lastly, dockerize postgresql and start Flask App.
+### Lastly, dockerize postgresql and start Flask App.
 
     C:\%PATH%\NewsLetter> docker compose up
   
     C:\%PATH%\NewsLetter> python -m flask run
 
-#### Thats all!
+### Thats all!
+
+![](https://github.com/ryetiss/flask-postgresql-docker/blob/main/img/newsletter1.png)
+![](https://github.com/ryetiss/flask-postgresql-docker/blob/main/img/newsletter2.png)
+![](https://github.com/ryetiss/flask-postgresql-docker/blob/main/img/newsletter3.png)
+![](https://github.com/ryetiss/flask-postgresql-docker/blob/main/img/newsletter4.png)
+![](https://github.com/ryetiss/flask-postgresql-docker/blob/main/img/newsletter5.png)
 
 > Login page credentials are "admin:admin123".
 
 > You can just run " **app_run.bat** "
 
-### Resources:
+## Resources:
 
 [1] https://www.digitalocean.com/community/tutorials/how-to-add-authentication-to-your-app-with-flask-login
 
