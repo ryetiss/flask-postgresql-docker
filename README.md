@@ -11,6 +11,8 @@ This repo is a simple Newsletter project.
 
 Thats all!
 
+** PS: For login page credentials are "admin:admin123".
+
 ### Resources:
 
 [1] https://www.digitalocean.com/community/tutorials/how-to-add-authentication-to-your-app-with-flask-login
