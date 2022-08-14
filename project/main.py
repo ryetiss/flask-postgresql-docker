@@ -32,11 +32,11 @@ def addnews():
 @login_required
 def addnews_post():
     # get last news id for new record. 
-    id = (Newsletters.query.order_by(Newsletters.id.desc()).first()).id
-    if id == None:
+    newsid = Newsletters.query.order_by(Newsletters.id.desc()).first()
+    if newsid == None:
         id = 1
     else:
-        id = int(id) + 1
+        id = int(newsid.id) + 1
     header = request.form.get('header')
     body = request.form.get('body')
     topic = request.form.get('topic')
