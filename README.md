@@ -29,7 +29,7 @@ This repo is a simple Newsletter project. This process is for WINDOWS10.
 
 #### Thats all!
 
-> For login page credentials are "admin:admin123".
+> Login page credentials are "admin:admin123".
 
 > You can just run " **app_run.bat** "
 
