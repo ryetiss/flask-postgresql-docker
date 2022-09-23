@@ -1,5 +1,5 @@
 @ECHO OFF
-:: This batch file uses for dockerizing postgresql, setting anvironment variables and running flask app 
+:: This batch file uses for dockerizing postgresql, setting environment variables and running flask app 
 
 :: python -m pip install virtualenv
 :: python -m virtualenv .venv
